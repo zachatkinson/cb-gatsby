@@ -12,7 +12,7 @@ const chunk = require (`lodash/chunk`)
 exports.createPages = async ({ graphql, actions, reporter })=> {
   const { posts } = await graphql(`
     query WpPosts {
-      allWpPost(sort: {date: DESC}) {
+      allWpPost(sort: {date: DESC}) { 
         edges {
           previous {
             id

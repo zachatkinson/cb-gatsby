@@ -1,0 +1,75 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1031;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+
+
+  &.open {
+    transition: all 0.5s;
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  a {
+    pointer-events: all;
+    text-decoration-line: none;
+    text-decoration-thickness: 0.3rem;
+
+    color: var(--color-heading-black);
+    :hover, :focus{
+      transition: all 0.5s;
+      text-decoration-color: var(--color-primary);
+      text-decoration-line: underline;
+    }
+  }
+  li{
+    list-style-type: none;
+  }
+  h1{
+    color: var(--color-heading-black);
+  }
+
+}
+
+.burgerMenu, .closeButton{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  cursor: pointer;
+  display: block;
+  transition: all 0.5s;
+  border-width: 0.2rem;
+  border-style: solid;
+  &:hover{
+    border-color: var(--color-primary);
+  }
+}
+
+.burgerMenu{
+  background: white;
+  border-color: white;
+  color: black;
+}
+.closeButton{
+  background: black;
+  border-color: black;
+  color: white;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}

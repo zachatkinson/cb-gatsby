@@ -1,0 +1,9 @@
+.homeBanner{
+  width: 100vw;
+  max-width: var(--maxWidth-full);
+  background: var(--color-heading-white);
+}
+.homeBannerInner{
+  max-width: var(--maxWidth-4xl);
+  margin: var(--spacing-0) auto;
+}

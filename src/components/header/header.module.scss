@@ -1,0 +1,22 @@
+.globalHeader {
+  color: var(--color-text);
+  padding: var(--spacing-5) var(--spacing-4);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.headerInner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--maxWidth-4xl);
+}
+
+.textLogo{
+  max-width: 10rem;
+  min-width: 10rem;
+}

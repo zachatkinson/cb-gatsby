@@ -1,7 +1,6 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
- */
 
-// You can delete this file if you're not using it
+// normalize CSS across browsers
+import "./src/css/normalize.css"
+
+// custom CSS styles
+import "./src/css/style.scss"
